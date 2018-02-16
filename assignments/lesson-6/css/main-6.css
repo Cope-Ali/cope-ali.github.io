@@ -56,13 +56,18 @@ header .subheading {
 
 nav {}
 
-nav button {}
+
+nav button {
+    padding: 5px;
+    margin: 10px;
+}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
+    min-width: 610px;
     background-color: #80bfff;
     font-family: 'Pompiere', cursive;
     font-size: 1.5rem;
