@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tri-Cities Meteorology | Franklin</title>
+        <meta name="author" content="Ali Cope">
+        <meta name="description" content="Weather and local information for Franklin.">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pompiere" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+
+    </head>
+    <body>
+
+        <header>
+            <img src="img/tricitieslogo.png" alt="The site logo" >
+            <h1>Tri-Cities Meteorology</h1>
+            <div class="subheading">Let's talk about the weather!</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The City of Franklin</h2>
+            <picture>
+                <img src="img/franklincity.jpeg" alt="image of Franklin City from Miller Lake"
+                     sizes=50vw srcset="img/franklinSmall.jpg 300w,
+                                        img/franklinMedium.jpg 500w,
+                                        img/franklinLarge.jpg 800w">
+
+            </picture>
+            <h3 id="summary">Weather Summary</h3>
+            <section class="summary">
+                <div class="highlow">
+                    <p>89&deg;<br>High</p>
+                    <p>54&deg;<br>Low</p>
+                </div>
+                <div class="current">
+                    <picture>
+                        <img src="img/sunny.png" alt="image of sun" width="50" height="auto">
+                    </picture>
+                   <br> Sunny
+                </div>
+                <div class="conditions">
+                    <p>0 &#37;<br>Precipitation</p>
+                    <p>5 mph<br>Wind Speed</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60p" height="auto"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" height="auto"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" height="auto"></td>
+                            <td><img src="img/partlycloudy.png" alt="image of clouds" width="60" height="auto"></td>
+                            <td><img src="img/rain.png" alt="image of rain" width="60" height="auto"></td>
+                            <td><img src="img/rain.png" alt="image of rain" width="60" height="auto"></td>
+                            <td><img src="img/partlycloudy.png" alt="image of sun" width="60" height="auto"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" height="auto"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" height="auto"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" height="auto"></td>
+                        </tr>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <p class="town-article">
+                    <img src="img/new-flowers.jpg" alt="image of new purple flowers" width="400" height="auto">
+                    Franklin has broken the temperature record with record highs. This early spring weather has not gone unnoticed by the citizens and vegitation of Franklin. Its hard to believe that it is only February with new flowers opening and trees budding.<br>
+                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdfthes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf <br>
+                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf
+                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf<br>
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <aside>
+                Contact information placeholder
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-Cities Meteorology | <span id="currentdate"></span></p>
+        </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font: "Times", serif;
+    font-size: 1rem;
+
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 900px;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgba(23, 97, 160, 0.2);
+}
+
+header, footer {
+    background-color: #1761a0;
+}
+
+header h1 {
+    display: block;
+    max-width: 100%;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-family: 'Berkshire Swash', cursive;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+header img {
+    float: left;
+    max-width: 200%;
+    margin: 10px;
+}
+
+header .subheading {
+    display: block;
+    max-width: 70%;
+    margin-left: 20%;
+    font-family: 'Pompiere', cursive;
+    color: #ffffff;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+nav {}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #80bfff;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+nav ul.hide { display:none;}
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #1761a0;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #f0a418;
+    color: white;
+}
+
+main {}
+
+main h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    color: #1761a0;
+    text-align: center;
+}
+
+main h3 {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.5rem;
+    color: #1761a0;
+    text-align: center;
+}
+
+main picture {
+    width: 100%;
+}
+
+
+section {}
+
+.summary {
+    display:block;
+    max-width: 50%;
+    padding: 1em;
+    -moz-column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1em;
+    column-count: 3;
+    column-gap: 1em;
+    text-align: center;
+    align-content: center;
+}
+
+#summary {
+    max-width: 100%;
+}
+
+article p.town-article img {
+    width: 100%;
+    margin: .75rem;
+}
+
+main picture img {
+    width: 100%;
+}
+
+.forecast {
+    display: none;
+    max-width: 78%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 5rem;
+}
+
+table,
+td,
+th {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer aside {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.25rem;
+}
+
+footer > p {
+    font-size: 1rem;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
