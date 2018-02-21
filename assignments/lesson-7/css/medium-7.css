@@ -5,15 +5,12 @@
 
     nav button { display:none; }  /* hamburger button does not need to be shown */
 
-    nav ul {
+    nav ul li{
         display: inline-block;
     }
-    nav ul.hide { display:inline-block;}
-    nav ul li {display:inline-block;
-    text-align: center;}
 
     section.forecast { display:block; }
-      /* show the 10-day forecast with the medium view and up */
+    /* show the 10-day forecast with the medium view and up */
 
     article p.town-article img {
         width: 50%;
@@ -22,7 +19,7 @@
     figure img{
         float:right;
         max-width: 50%;
-         }  /* responsive images */
+    }  /* responsive images */
     .forecast{
         clear: both;
         margin-left: 5%;
