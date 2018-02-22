@@ -5,29 +5,23 @@
 
     nav button { display:none; }  /* hamburger button does not need to be shown */
 
-    nav ul li{
-        display: inline-block;
+    nav ul {
+        display:flex;
+        justify-content: space-around;
     }
+    nav ul.hide { display:flex;}
+    nav ul li {display:flex;
+        ;}
 
-    section.forecast { display:block; }
+    section.forecast { display:flex;
+    flex-direction: column;}
     /* show the 10-day forecast with the medium view and up */
-
+    .town-article{
+        flex-direction: row-reverse;
+    }
     article p.town-article img {
-        width: 50%;
-        float:right; }  /* responsive images */
-
-    figure img{
-        float:right;
-        max-width: 50%;
+        width: 35%;
+        align-self: flex-end;
     }  /* responsive images */
-    .forecast{
-        clear: both;
-        margin-left: 5%;
-    }
-    #summary{
-        max-width: 58%;
-    }
-    .summary{
-        max-width: 60%;
-    }
+
 }

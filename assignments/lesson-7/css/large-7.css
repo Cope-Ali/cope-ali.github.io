@@ -2,19 +2,7 @@
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
     article p.town-article img {
-        width: 40%;
+        width: 30%;
     }
-    figure img{
-        width: 40%;
-    }
-    #summary{
-        margin-left: 20%;
-    }
-    .summary{
-        margin-left: 20%;
-    }
-    .forecast{
-        margin-right: 11%;
-        margin-left:11%;
-    }
+
 }

@@ -17,7 +17,7 @@
 
 
     </head>
-    <body>
+    <body class="mainWrapper">
 
         <header>
             <img src="img/tricitieslogo.png" alt="The site logo" >
@@ -30,6 +30,7 @@
         <!-- site navigation use placeholder references -->
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
+            <div class="rowWrapper">
             <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
@@ -38,6 +39,7 @@
                 <li><a href="#">Storm Center</a></li>
                 <li><a href="#">Gallery</a></li>
             </ul>
+            </div>
         </nav>
 
         <main>
@@ -50,21 +52,23 @@
 
             </picture>
             <h3 id="summary">Weather Summary</h3>
-            <section class="summary">
-                <div class="highlow">
-                    <p>89&deg;<br>High</p>
-                    <p>54&deg;<br>Low</p>
+            <p class = "rowWrapper" id="chill">Wind Chill:  <span id="windChill"></span>&deg;<br></p>
+            <section class="rowWrapper", id="summaryContent">
+                <div class="columnWrapper">
+                    <p> <span id="high">89</span> &deg;<br>High</p>
+                    <p> <span id="low">54</span>&deg;<br>Low</p>
                 </div>
-                <div class="current">
+                <div class="columnWraper">
                     <picture>
-                        <img src="img/sunny.png" alt="image of sun" width="50" height="auto">
+                        <img src="img/sunny.png" alt="image of sun">
                     </picture>
                    <br> Sunny
                 </div>
-                <div class="conditions">
+                <div class="columnWrapper">
                     <p>0 &#37;<br>Precipitation</p>
-                    <p>5 mph<br>Wind Speed</p>
+                    <p><span id="wind">5</span>mph<br>Wind Speed</p>
                 </div>
+
             </section>
 
             <section class="forecast">
