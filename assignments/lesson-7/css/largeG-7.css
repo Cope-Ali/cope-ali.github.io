@@ -1,0 +1,15 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    .container{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .25rem;
+        margin: 1rem auto;
+        max-width: 75%;
+    }
+    .container h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+}
