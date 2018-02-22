@@ -120,6 +120,8 @@ img {
     align-self: center;
 }
 
+img:hover {box-shadow: 7px 7px 7px yellow;}
+
 main h2 {
     margin: 0;
     font-family: 'Berkshire Swash', cursive;
