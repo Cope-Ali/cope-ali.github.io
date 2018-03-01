@@ -184,7 +184,7 @@ footer > p {
 .columnWrapper{
     display:flex;
     flex-direction: column;
-    align-content:space-evenly;
+    align-content:space-around;
 
 }
 
