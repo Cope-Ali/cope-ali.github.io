@@ -12,7 +12,7 @@ legend{
     color: white;
     font-size: 1.25em;
     background-color: #1761a0;
-    margin: left 10%;
+    margin-left: 10%;
     padding: .6em;
     border-radius: 1em;
     border: #1761a0 double 2px;
@@ -35,7 +35,7 @@ input.submit {
     font-size: 1.5em;
     font-weight: bold;
     background-color: #1761a0;
-    margin: left 10%;
+    margin-left: 10%;
     padding: .6em;
     border-radius: 2em;
     border:  coral double 2px;

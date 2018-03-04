@@ -22,6 +22,7 @@
 
 
 </head>
+    <body>
 <header>
     <img src="img/tricitieslogo.png" alt="The site logo">
     <section id="headingContainer">
@@ -29,7 +30,7 @@
         <div class="subheading">Let's talk about the weather!</div>
     </section>
 </header>
-<body>
+
 <!-- site navigation use placeholder references -->
 <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
@@ -58,12 +59,12 @@
                 <label><span>Phone:</span>
                     <input name="phone" type="tel" value="" placeholder="1112224444" pattern="[0-9]{10,20}" required></label>
                 <label><span>Zip Code: </span>
-                    <input name="zipcode" type="number" value="" placeholder="00000" pattern="[0-9]{5}" required></label>
+                    <input name="zipcode" type="number" value="" placeholder="00000" required></label>
             </fieldset>
             <fieldset>
                 <legend> Storm Information </legend>
                 <label><span>Storm Date: </span>
-                    <input name="stormdate" type="date" value="" placeholder="mmddyyyy" pattern="[0-9]{8}" required></label>
+                    <input name="stormdate" type="date" value="" placeholder="mmddyyyy" required></label>
                 <label><span>Storm Type: </span>
                     <input list="stormtype" name="stormtype" value="" placeholder="Storm Type">
                         <datalist id="stormtype">
@@ -74,9 +75,9 @@
                             <option value="Tornado">
                         </datalist></label>
                 <label><span>Storm Severity</span>
-                    <div class="slidecontainer">
+                    <p class="slidecontainer">
                         <input name="severity" type="range" class="slider"  value="" min="0" max="10" step="1">
-                    </div></label>
+                    </p></label>
                 <label><span>Storm Region </span><select name="region">
                     <option value="default" selected disabled>Select Region</option>
                     <option value="franklin">Franklin</option>
