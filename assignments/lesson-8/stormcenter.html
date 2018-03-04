@@ -8,7 +8,10 @@
     <meta name="author" content="Ali Cope">
     <meta name="description" content="Report weather and storm activity for the Tri-Cities area">
     <!-- external style references in the proper cascading order -->
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pompiere" rel="stylesheet">
+    <!-- Pompiere font-->
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+    <!-- Berkshire swash font -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main-8.css" rel="stylesheet">
@@ -53,7 +56,7 @@
             <fieldset>
                 <legend> Personal Information </legend>
                 <label><span>Full Name: </span>
-                    <input name="fullname" type=text value="" placeholder="Full Name" pattern="[A-Za-z _.-]{5-99}" required></label>
+                    <input name="fullname" type=text value="" placeholder="Full Name" pattern="[A-Za-z -._]{5,}" required></label>
                 <label><span>Email: </span>
                     <input name="email" type="email" value="" placeholder="name@email.com"></label>
                 <label><span>Phone:</span>
