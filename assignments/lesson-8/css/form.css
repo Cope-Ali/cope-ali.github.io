@@ -95,3 +95,6 @@ input:required{
     border: 2px dashed coral;
 }
 
+#sliderInput{
+    display: inline
+}

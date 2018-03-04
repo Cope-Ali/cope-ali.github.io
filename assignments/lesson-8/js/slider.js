@@ -1,3 +1,3 @@
-function sliderValue(val) {
-    document.getElementById("sliderInput").value = val;
+function sliderValue(rating) {
+    document.getElementById("sliderInput").innerHTML = rating;
 }

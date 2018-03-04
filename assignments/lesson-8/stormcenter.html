@@ -77,10 +77,11 @@
                             <option value="Thunderstorm">
                             <option value="Tornado">
                         </datalist></label>
-                <label><span>Storm Severity</span>
-                    <p class="slidecontainer">
-                        <input name="severity" type="range" class="slider"  value="" min="0" max="10" step="1">
-                    </p></label>
+                <label><span>Storm Severity (1-10)</span>
+                    <span class="slidecontainer">
+                        <input type="range" name="severity"  id="rating" class="slider"  value="5" min="1" max="10" step="1" oninput="sliderValue(this.value)" onchange="sliderValue(this.value)">
+                        Severity Rating: <span id="sliderInput">5</span>
+                    </span></label>
                 <label><span>Storm Region </span><select name="region">
                     <option value="default" selected disabled>Select Region</option>
                     <option value="franklin">Franklin</option>
@@ -111,6 +112,7 @@
     </aside>
     <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-Cities Meteorology | <span id="currentdate"></span></p>
 </footer>
+        <script src="js/slider.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
 </body>
