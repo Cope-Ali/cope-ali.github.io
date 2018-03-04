@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tri-Cities Meteorology | Storm Center</title>
+    <meta name="author" content="Ali Cope">
+    <meta name="description" content="Report weather and storm activity for the Tri-Cities area">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pompiere" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main-8.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="css/medium-8.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="css/large-8.css" rel="stylesheet">
+    <!-- default styles for form -->
+    <link href="css/form.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+
+
+</head>
+<header>
+    <img src="img/tricitieslogo.png" alt="The site logo">
+    <section id="headingContainer">
+        <h1>Tri-Cities Meteorology</h1>
+        <div class="subheading">Let's talk about the weather!</div>
+    </section>
+</header>
+<body>
+<!-- site navigation use placeholder references -->
+<nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <div class="rowWrapper">
+        <ul id="primaryNav" class="hide">
+            <li><a href="/cope-ali.github.io/index.html">Home</a></li>
+            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="franklin-8.html">Gallery</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+    <h2> Storm Center </h2>
+    <div>
+        <form action="thanks.html" method="post" enctype="multipart/form-data" name="event" id="stormcenter">
+            <fieldset>
+                <legend> Personal Information </legend>
+                <label><span>Full Name: </span>
+                    <input name="fullname" type=text value="" placeholder="Full Name" pattern="[a-zA-Z _.-]{5-99}" required></label>
+                <label><span>Email: </span>
+                    <input name="email" type="email" value="" placeholder="name@email.com"></label>
+                <label><span>Phone:</span>
+                    <input name="phone" type="tel" value="" placeholder="1112224444" pattern="[0-9]{10,20}" required></label>
+                <label><span>Zip Code: </span>
+                    <input name="zipcode" type="number" value="" placeholder="00000" pattern="[0-9]{5}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend> Storm Information </legend>
+                <label><span>Storm Date: </span>
+                    <input name="stormdate" type="date" value="" placeholder="mmddyyyy" pattern="[0-9]{8}" required></label>
+                <label><span>Storm Type: </span>
+                    <input list="stormtype" name="stormtype" value="" placeholder="Storm Type">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist></label>
+                <label><span>Storm Severity</span>
+                    <div class="slidecontainer">
+                        <input name="severity" type="range" class="slider"  value="" min="0" max="10" step="1" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="0" label="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5" label="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10" label="10">
+                    </datalist>
+                    </div></label>
+                <label><span>Storm Region </span><select name="region">
+                    <option value="default" disabled>Select Region</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                    </select>
+                </label>
+                <label><span> User in Danger?</span>
+                    <input type="radio" name="danger" value="yes">Yes<br>
+                    <input type="radio" name="danger" value="maybe">Maybe<br>
+                    <input type="radio" name="danger" value="no">No<br>
+                </label>
+            </fieldset>
+<fieldset>
+    <legend>Comments</legend>
+            <label><span>Additional Information or Comments: </span>
+                <textarea id="comments" name="comments" type="text" value="" placeholder="Comments..." rows="5"></textarea>
+            </label>
+            </fieldset>
+<input type="submit" value="Submit Form" class="submit">
+        </form>
+    </div>
+
+</main>
+<footer>
+    <aside>
+        Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-Cities Meteorology | <span id="currentdate"></span></p>
+</footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>

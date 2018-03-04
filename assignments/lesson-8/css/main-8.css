@@ -1,0 +1,218 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font: "Times", serif;
+    font-size: 1rem;
+
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 75%;
+    min-width: 400px;
+    padding: 1rem;
+    margin: auto;
+    align-content: center;
+    background-color: rgba(23, 97, 160, 0.2);
+}
+
+header, footer {
+    background-color: #1761a0;
+}
+
+header h1 {
+    max-width: 100%;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-family: 'Berkshire Swash', cursive;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 200%;
+    margin: 10px;
+}
+
+header .subheading {
+    min-width: 70%;
+    margin-left: 20%;
+    font-family: 'Pompiere', cursive;
+    color: #ffffff;
+    font-size: 1.75rem;
+    text-align: center;
+    align-items: center;
+}
+
+nav {}
+
+
+nav button {
+    padding: 5px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    flex-flow: wrap;
+    background-color: #80bfff;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+nav ul.hide { display:none;}
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #1761a0;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #f0a418;
+    color: white;
+}
+
+main {}
+
+main h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    color: #1761a0;
+    text-align: center;
+}
+
+main h3 {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.5rem;
+    color: #1761a0;
+    text-align: center;
+}
+
+main picture {
+    width: 80%;
+}
+
+
+section {}
+
+#summaryContent {
+    padding: 1em;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+#summaryContent div{
+    margin: 2em;
+}
+
+#summary {
+    max-width: 100%;
+    align-items: stretch;
+}
+
+article p.town-article img {
+    width: 100%;
+    margin: .75rem;
+}
+
+main picture img {
+    width: 100%
+}
+
+.forecast {
+    display: none;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#chill{
+    align-self: center;
+}
+
+table,
+td,
+th {
+    border: solid 1px black;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer aside {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.25rem;
+}
+
+footer > p {
+    font-size: 1rem;
+}
+.mainWrapper {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.columnWrapper{
+    display:flex;
+    flex-direction: column;
+    align-content:space-around;
+
+}
+
+.rowWrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.town-article{
+    display:flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+}
+
+headingContainer{
+    display: flex;
+    flex-direction:column;
+}
+
+nav button {
+   align-self: flex-start;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

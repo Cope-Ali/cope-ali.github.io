@@ -1,0 +1,27 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header,nav,main,footer{
+    }
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav ul {
+        display:flex;
+        justify-content: space-around;
+    }
+    nav ul.hide { display:flex;}
+    nav ul li {display:flex;
+        ;}
+
+    section.forecast { display:flex;
+    flex-direction: column;}
+    /* show the 10-day forecast with the medium view and up */
+    .town-article{
+        flex-direction: row-reverse;
+    }
+    article p.town-article img {
+        width: 35%;
+        align-self: flex-end;
+    }  /* responsive images */
+
+}
