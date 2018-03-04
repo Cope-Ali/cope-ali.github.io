@@ -4,3 +4,7 @@
     color: red;
     font-size: 1.25em;
 }
+
+input:required{
+    border: 1px dashed red;
+}
