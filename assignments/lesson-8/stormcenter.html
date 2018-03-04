@@ -53,7 +53,7 @@
             <fieldset>
                 <legend> Personal Information </legend>
                 <label><span>Full Name: </span>
-                    <input name="fullname" type=text value="" placeholder="Full Name" pattern="[a-zA-Z _.-]{5-99}" required></label>
+                    <input name="fullname" type=text value="" placeholder="Full Name" pattern="[A-Za-z _.-]{5-99}" required></label>
                 <label><span>Email: </span>
                     <input name="email" type="email" value="" placeholder="name@email.com"></label>
                 <label><span>Phone:</span>
@@ -64,7 +64,7 @@
             <fieldset>
                 <legend> Storm Information </legend>
                 <label><span>Storm Date: </span>
-                    <input name="stormdate" type="date" value="" placeholder="mmddyyyy" required></label>
+                    <input name="stormdate" type="date" value=""  required></label>
                 <label><span>Storm Type: </span>
                     <input list="stormtype" name="stormtype" value="" placeholder="Storm Type">
                         <datalist id="stormtype">
@@ -94,7 +94,7 @@
 <fieldset>
     <legend>Comments</legend>
             <label><span>Additional Information or Comments: </span>
-                <textarea id="comments" name="comments" type="text" value="" placeholder="Comments..." rows="5"></textarea>
+                <textarea id="comments" name="comments" placeholder="Comments..." rows="5"></textarea>
             </label>
             </fieldset>
 <input type="submit" value="Submit Form" class="submit">
