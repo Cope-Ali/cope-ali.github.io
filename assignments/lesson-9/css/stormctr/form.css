@@ -1,0 +1,99 @@
+form#stormcenter{
+    margin: 1em 5%;
+}
+
+fieldset{
+    border-radius: 1em;
+    margin: 1.75em 0;
+    border: #1761a0 double 2px;
+}
+
+legend{
+    color: white;
+    font-size: 1.25em;
+    background-color: #1761a0;
+    margin-left: 10%;
+    padding: .6em;
+    border-radius: 1em;
+    border: #1761a0 double 2px;
+    font-family: 'Pompiere', cursive;
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+
+label span {
+    display: block;
+    padding-bottom:.2em;
+    padding-top: .9em;
+}
+
+input.submit {
+    color: coral;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #1761a0;
+    margin-left: 10%;
+    padding: .6em;
+    border-radius: 2em;
+    border:  coral double 2px;
+    font-family: 'Pompiere', cursive;
+    width: 50%;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.slidecontainer {
+    min-width: 300px;
+    width: 50%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 30px;
+    background: darkgray;
+    outline: none;
+    opacity: 0.65;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #000000;
+    width: 35px;
+    height: 40px;
+    border-radius: 3px;
+    background: #1761a0;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: 1px solid #000000;
+    width:35px;
+    height: 40px;
+    border-radius: 3px;
+    background: #1761a0;
+    cursor: pointer;
+}
+
+textarea {
+    min-width: 300px;
+    width: 50%;
+}
+
+input:required{
+    border: 2px dashed coral;
+}
+
+#sliderInput{
+    display: inline
+}

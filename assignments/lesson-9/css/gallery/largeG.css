@@ -1,0 +1,19 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    .container{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:1rem;
+        margin: auto;
+        max-width: 75%;
+        align-content: space-around;
+    }
+    .container h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-gap: 2rem;
+        align-content: space-around;
+    }
+    img:hover{box-shadow: none;}
+    main div:hover {box-shadow: 7px 7px 14px yellow;}
+}
