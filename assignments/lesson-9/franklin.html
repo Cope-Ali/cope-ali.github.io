@@ -53,24 +53,17 @@
                                         img/franklinLarge.jpg 800w">
 
             </picture>
-            <h3 id="summary">Weather Summary</h3>
-            <p class = "rowWrapper" id="chill">Wind Chill:  <span id="windChill"></span>&deg;<br></p>
-            <section class="rowWrapper" id="summaryContent">
-                <div class="columnWrapper">
-                    <p> <span id="high">89</span> &deg;<br>High</p>
-                    <p> <span id="low">54</span>&deg;<br>Low</p>
+            <h3 id="summary">Current Conditions</h3>
+            <section id="summaryContent">
+                <picture>
+                    <img id= "w_icon" src="" alt="image of current conditions">
+                </picture>
+                <div >
+                    <p> Temperature: <span id="currentTemp"></span> &deg; F</p>
+                    <p> Conditions: <span id="weatherString"></span></p>
+                    <p> Wind Speed: <span id="wind">54</span> MPH</p>
+                    <p><span id="weatherText"></span></p>
                 </div>
-                <div class="columnWraper">
-                    <picture>
-                        <img src="img/sunny.png" alt="image of sun">
-                    </picture>
-                   <br> Sunny
-                </div>
-                <div class="columnWrapper">
-                    <p>0 &#37;<br>Precipitation</p>
-                    <p><span id="wind">5</span>mph<br>Wind Speed</p>
-                </div>
-
             </section>
 
             <section class="forecast">
@@ -120,14 +113,11 @@
             </section>
 
             <article>
-                <h3>Franklin Breaks Record</h3>
-                <p class="town-article">
-                    <img src="img/new-flowers.jpg" alt="image of new purple flowers" width="400" height="auto">
-                    Franklin has broken the temperature record with record highs. This early spring weather has not gone unnoticed by the citizens and vegitation of Franklin. Its hard to believe that it is only February with new flowers opening and trees budding.<br>
-                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdfthes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf <br>
-                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf
-                    thes;dlkliv ;lksldkjrk ;kljf;alkskrj halskjr hfh hjek kdjashek jdjhj kfjhks jskdfhcuas jdhkasjdh ujashkjfj  jhfakjsdf kfkjhasdkj hfkajsdjfk k jfhkjf aksjdf kjk jfhakjsdfa haksdjf kj k jahskdfjh  hfkjh k kjasfhasdfh k fkjhasdf<br>
-                </p>
+                <h3>Franklin Current Events</h3>
+                <div class="town-events">
+                    <img src="img/new-flowers.jpg" alt="image of new purple flowers">
+                </div>
+                <div class="clear"></div>
             </article>
 
         </main>
@@ -140,6 +130,7 @@
         </footer>
         <script src="js/currentdate.js"></script>
         <script src="js/hamburger.js"></script>
-        <script src="js/windchill.js"></script>
+        <script src="js/wu-weather.js"></script>
+        <script src="js/franklinCurrentEv.js"></script>
     </body>
 </html>

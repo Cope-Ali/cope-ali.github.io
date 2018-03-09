@@ -11,6 +11,7 @@
 body {
     font: "Times", serif;
     font-size: 1rem;
+    align-items: center;
 
 }
 
@@ -18,8 +19,8 @@ header,
 nav,
 main,
 footer {
-    max-width: 75%;
-    min-width: 400px;
+    max-width: 70%;
+    min-width: 475px;
     padding: 1rem;
     margin: auto;
     align-content: center;
@@ -117,24 +118,6 @@ main picture {
     width: 80%;
 }
 
-
-section {}
-
-#summaryContent {
-    padding: 1em;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-}
-#summaryContent div{
-    margin: 2em;
-}
-
-#summary {
-    max-width: 100%;
-    align-items: stretch;
-}
-
 article p.town-article img {
     width: 100%;
     margin: .75rem;
@@ -165,6 +148,7 @@ th {
 footer {
     color: #ffffff;
     text-align: center;
+    clear: both;
 }
 
 footer aside {
@@ -212,7 +196,32 @@ headingContainer{
 nav button {
    align-self: flex-start;
 }
+#summaryContent{
+    margin:auto;
+    border-style: groove;
+}
 
-/* This structure refers to p elements that are direct children of the footer element */
+#w_icon {
+    width: 8rem;
+    margin-left: 2rem;
+    float:left
+}
 
-/* Other Class Selectors */
+#summaryContent div {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.town-events img{
+    width: 200px;
+    float: right;
+    margin-right: 25px;
+}
+
+.clear {
+    clear:both;
+}
+
+.container {
+    margin: auto;
+}
