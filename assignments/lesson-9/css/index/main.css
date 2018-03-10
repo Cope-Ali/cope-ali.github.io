@@ -155,7 +155,7 @@ section.cityInfo img {
 
 }
 
-div.weatherStoryContainer img {
+.weatherStoryPic {
     max-width: 400px;
     max-height: 321px;
 }

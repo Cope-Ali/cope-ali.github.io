@@ -28,15 +28,13 @@
 
     .weatherStoryPic {
         margin-left: 15px;
-
     }
 
     .cityInfo {
         display: flex;
-        flex-flow:column wrap;
+        flex-flow: column wrap;
         max-width: 380px;
         padding: 10px;
-        align-content: center;
     }
 
     #city2{
@@ -44,8 +42,12 @@
         flex-flow:column wrap;
         max-width: 380px;
         padding: 10px;
-        align-content: center;
     }
     .cityInfo div.greenville {
         margin: 20px 20px 20px 20px;
 }
+
+ #cities {
+        display: flex;
+        flex-direction: row wrap;
+    }
