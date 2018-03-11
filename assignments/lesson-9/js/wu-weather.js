@@ -1,5 +1,5 @@
 // Current Conditions
-var requestURL = 'http://api.wunderground.com/api/6710307f40d51364/conditions/q/MN/Franklin.json'
+var requestURL = 'https://api.wunderground.com/api/6710307f40d51364/conditions/q/MN/Franklin.json'
 var requestCurrent = new XMLHttpRequest();
 requestCurrent.open('GET', requestURL, true);
 requestCurrent.send();
@@ -15,7 +15,7 @@ requestCurrent.onload = function(){
 
 // Current Condtions text
 var conditionsText = new XMLHttpRequest();
-conditionsText.open("GET", "http://api.wunderground.com/api/6710307f40d51364/forecast/q/MN/Franklin.json", true );
+conditionsText.open("GET", "https://api.wunderground.com/api/6710307f40d51364/forecast/q/MN/Franklin.json", true );
 conditionsText.send();
 
 conditionsText.onload = function (){

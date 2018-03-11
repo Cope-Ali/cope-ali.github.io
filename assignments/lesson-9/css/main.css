@@ -225,3 +225,7 @@ nav button {
 .container {
     margin: auto;
 }
+
+#wuLogo{
+max-width: 100px;
+}

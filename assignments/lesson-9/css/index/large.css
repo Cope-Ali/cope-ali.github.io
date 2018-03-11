@@ -49,5 +49,6 @@
 
  #cities {
         display: flex;
-        flex-direction: row wrap;
+        flex-direction:row wrap;
     }
+}
