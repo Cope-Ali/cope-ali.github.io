@@ -8,9 +8,7 @@ requestCurrent.onload = function(){
     var franklinWeather = JSON.parse(requestCurrent.responseText);
     console.log(franklinWeather);
     document.getElementById('currentTemp').innerHTML = franklinWeather.current_observation.temp_f;
-    var imagehttp = franklinWeather.current_observation.icon_url.replace("http", "https");
-    var imghttps = imagehttp.replace("http", "https");
-    document.getElementById('w_icon').src = imghttps;
+    document.getElementById('w_icon').src = franklinWeather.current_observation.icon_url.replace("http", "https");
     document.getElementById('weatherString').innerHTML = franklinWeather.current_observation.weather;
     document.getElementById('wind').innerHTML = franklinWeather.current_observation.wind_mph;
 }
