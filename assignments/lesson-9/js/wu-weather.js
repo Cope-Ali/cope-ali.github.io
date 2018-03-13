@@ -8,7 +8,7 @@ requestCurrent.onload = function(){
     var franklinWeather = JSON.parse(requestCurrent.responseText);
     console.log(franklinWeather);
     document.getElementById('currentTemp').innerHTML = franklinWeather.current_observation.temp_f;
-    var imagehttp = franklinWeather.current_observation.icon_url;
+    var imagehttp = franklinWeather.current_observation.icon_url.replace("http", "https");
     var imghttps = str.replace("http", "https");
     document.getElementById('w_icon').src = imghttps;
     document.getElementById('weatherString').innerHTML = franklinWeather.current_observation.weather;
