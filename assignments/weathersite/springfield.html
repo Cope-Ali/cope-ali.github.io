@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tri-Cities Meteorology | Springfield</title>
+        <meta name="author" content="Ali Cope">
+        <meta name="description" content="Weather and local information for Springfield.">
+        <!-- external style references in the proper cascading order -->
+        <!-- Pompiere font-->
+        <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+        <!-- Berkshire swash font -->
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+
+    </head>
+    <body>
+
+        <header>
+            <img src="img/tricitieslogo.png" alt="The site logo" >
+            <section id="headingContainer">
+            <h1>Tri-Cities Meteorology</h1>
+            <div class="subheading">Let's talk about the weather!</div>
+            </section>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <div class="rowWrapper">
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <main>
+            <h2>The City of Springfield</h2>
+            <picture>
+                <img src="img/butterflyFlowers.jpg" alt="image of new flowers blooming in springfield">
+
+            </picture>
+            <h3 id="summary">Current Conditions</h3>
+            <section id="summaryContent">
+                <picture>
+                    <img id= "w_icon" src="" alt="image of current conditions">
+                </picture>
+                <div >
+                    <p> Temperature: <span id="currentTemp"></span> &deg; F</p>
+                    <p> Conditions: <span id="weatherString"></span></p>
+                    <p> Wind Speed: <span id="wind">54</span> MPH</p>
+                    <p><span id="weatherText"></span></p>
+                    <span>Conditions provided by: </span><img src="img/wundergroundLogo_4c_horz.png" alt="weather underground logo" id="wuLogo">
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" ></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60"></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60"></td>
+                            <td><img src="img/partlycloudy.png" alt="image of clouds" width="60"></td>
+                            <td><img src="img/rain.png" alt="image of rain" width="60" ></td>
+                            <td><img src="img/rain.png" alt="image of rain" width="60" ></td>
+                            <td><img src="img/partlycloudy.png" alt="image of sun" width="60" ></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" ></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" ></td>
+                            <td><img src="img/sunny.png" alt="image of sun" width="60" ></td>
+                        </tr>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Current Events</h3>
+                <div class="town-events">
+                    <img src="img/new-flowers.jpg" alt="image of new purple flowers">
+                </div>
+                <div class="clear"></div>
+            </article>
+
+        </main>
+
+        <footer>
+            <aside>
+                Contact information placeholder
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Tri-Cities Meteorology | <span id="currentdate"></span></p>
+        </footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/wu-weatherSpringfield.js"></script>
+        <script src="js/springfieldCurrentEv.js"></script>
+    </body>
+</html>

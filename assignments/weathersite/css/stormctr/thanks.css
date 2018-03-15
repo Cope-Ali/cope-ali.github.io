@@ -1,0 +1,7 @@
+/*color the danger statement red */
+
+.danger{
+    color: red;
+    font-size: 1.25em;
+}
+
