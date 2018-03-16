@@ -93,7 +93,7 @@ nav ul li.active a {
     color: white;
 }
 
-nav ul li a:hover {
+nav ul li:hover{
     background-color: #f0a418;
     color: white;
 }
