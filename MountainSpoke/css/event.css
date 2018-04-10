@@ -1,0 +1,64 @@
+#event1 > p {
+    grid-area: p1;
+}
+
+#event1 > img {
+    grid-area: img1;
+}
+
+#event1 > h2 {
+    grid-area: title1;
+}
+#event2 > p {
+    grid-area: p2;
+}
+
+#event2 > img {
+    grid-area: img2;
+}
+
+#event2 > h2 {
+    grid-area: title2;
+}
+#regForm {
+    grid-area: form;
+}
+
+#content-container {
+    grid-template-areas:
+        'title1'
+        'img1'
+        'p1'
+        'title2'
+        'img2'
+        'p2'
+        'form'
+}
+
+@media only screen and (min-width: 37.5em){
+    #content-container {
+        grid-template-areas:
+            'title1 title1'
+            'p1 img1'
+            'title2 title2'
+            'p2 img2'
+            'form form'
+    }
+
+}
+
+/*
+@media only screen and (min-width: 64em){
+    #content-container {
+        grid-template-areas:
+            'title1'
+            'img1'
+            'p1'
+            'title2'
+            'img2'
+            'p2'
+            'form'
+    }
+
+}
+*/

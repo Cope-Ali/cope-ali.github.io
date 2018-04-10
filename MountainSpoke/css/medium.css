@@ -1,0 +1,80 @@
+@media only screen and (min-width: 37.5em) {
+
+    nav ul {
+        display: inline-block;
+        width: 100%;
+        border-radius: 0;
+    }
+   nav li {
+        display: inline;
+        margin 10px;
+    }
+    header, footer{
+        max-width: 100%;}
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+
+    header h1{
+        font-size: 3rem;
+    }
+
+    #content-container {
+        max-width: 100%;
+        padding: 10px;
+        grid-template-areas: 'left right';
+    }
+
+    .events#content-container {
+        max-width: 100%;
+        padding 10px;
+        grid-template-areas: 'left''right''form';
+    }
+
+    .events#content-container img{
+        max-width: 100%;
+    }
+    .events#content-container h2{
+        font-size: 2.5rem;
+    }
+    #content-container img {
+        max-width: 12em;
+        margin: auto;
+    }
+    nav ul a {
+        padding: 10px;
+        height: 40px;
+        display: inline-block;
+    }
+
+    button {
+        width: 250px;
+        align-self: center;
+        margin: auto;
+    }
+
+    h2 {
+        height: 30px;
+    }
+
+    #homeBuy p, #homeTour p{
+        height: 250px;
+    }
+
+    #tourOne p, #tourTwo p {
+        height: 400px;
+    }
+    #form-container {
+        grid-template-areas: 'left right';
+    }
+    .eventimg{
+        width: 100%;
+        margin: auto;
+    }
+
+    form {
+        margin-left: 130px;
+    }
+
+}

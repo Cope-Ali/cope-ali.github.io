@@ -1,0 +1,57 @@
+@media only screen and (min-width: 64em) {
+
+    #grid-container{
+        max-width: 90%;
+    }
+
+    header, footer{
+        max-width: 100%;
+    }
+    header h1{
+
+        font-size: 3.5rem;
+    }
+
+    header img {
+        width: 150px
+    }
+
+    nav ul {
+        font-size: 1.5rem;
+    }
+
+    nav ul a {
+        margin: 0 8px 0 8px;
+    }
+
+    #content-container{
+        max-width: 100%;
+        grid-template-areas:
+            'left left'
+            'right right';
+    }
+    #homeTour, #homeBuy, #tourOne, #tourTwo, #event1, #event2{
+        grid-template-areas:
+            'title title'
+            'img p'
+            'button button';
+    grid-gap: 20px;
+    }
+
+    #content-container img {
+        max-width: 20em;
+        margin: auto;
+    }
+    main h2 {
+        font-size: 2.5rem;
+    }
+    main p {
+        font-size: 1.75rem;
+    }
+    #tourOne p {
+        height: 280px;
+    }
+    #tourTwo p {
+        height: 450px;
+    }
+}

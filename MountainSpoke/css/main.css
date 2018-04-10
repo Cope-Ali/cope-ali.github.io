@@ -1,0 +1,261 @@
+
+/*
+color1: rgba(0, 89, 37, 1);
+color2: rgba(113, 145, 23, 1);
+color3: rgba(30, 87, 140, 1);
+color4: rgba(239, 212, 91, 1);
+color5: rgba(163, 142, 119, 1);
+
+*/
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: 'Oregano', cursive;
+    font-size: 1.5rem;
+    align-content: center;
+    justify-content: center;
+
+}
+
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+#grid-container{
+    display: grid;
+    grid-template-areas:
+        'header '
+        'nav'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
+    align-content: space-around;
+    background-color:  rgba(163, 142, 119, 1);
+}
+
+#homeTour, #tourOne, #event1 { grid-area: left;}
+#homeBuy, #tourTwo, #event2 {grid-area: right;}
+
+#content-container{
+    display: grid;
+    align-content: center;
+    max-width: 100%;
+    grid-template-areas:
+        'left'
+        'right';
+    grid-gap: 10px;
+}
+
+section h2 {grid-area: title;}
+section img {grid-area: img;}
+section p {grid-area: p;}
+section button {grid-area: button;}
+button a {
+    text-decoration: none;
+    color: #efd45b;
+}
+
+#homeTour, #homeBuy, #tourOne, #tourTwo, #event1, #event2{
+    display: grid;
+    grid-template-areas:
+        'title'
+        'img'
+        'p'
+        'button';
+}
+
+p
+{
+    padding: 10px;
+}
+header, footer {
+    background-color: rgba(30, 87, 140, 1);
+    max-width: 100%;
+}
+
+header h1 {
+    max-width: 90%;
+    font-family: 'Chelsea Market', cursive;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    float:left;
+    border-radius: 2em;
+}
+
+.eventimg{
+    width: 75%;
+    margin: auto;
+}
+nav {}
+
+
+nav button {
+    width: 100px;
+    padding-left: 10px;
+    border: double rgba(113, 145, 23, 1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    width: 50%;
+    max-width: 100%;
+    flex-flow: wrap;
+    background-color: rgba(0, 89, 37, 1);
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    border-radius: 2em;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: rgba(239, 212, 91, 1);
+    color: white;
+    border-radius: 2em;
+}
+
+main {}
+
+main h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    color: #1761a0;
+    text-align: center;
+}
+
+#content-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer span, footer a {
+    padding: 10px;
+}
+
+.active {
+    background-color: rgba(113, 145, 23, 1);
+    border-radius: 2em;
+    padding: 10px;
+}
+
+fieldset {
+    border-radius: 1em;
+    margin: 1.75em 0;
+    border: #005925 double 4px;
+}
+
+legend {
+    color: white;
+    font-size: 1em;
+    background-color: #1761a0;
+    margin-left: 10%;
+    padding: .5em;
+    border-radius: 1em;
+    border: #1e578c double 4px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+label span {
+    display: block;
+    padding-bottom: .2em;
+    padding-top: .9em;
+}
+
+input.submit, button {
+    color: #efd45b;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #1e578c;
+    margin-left: 10%;
+    padding: .6em;
+    border-radius: 2em;
+    border: #efd45b double 4px;
+    font-family: 'Chelsea Market', cursive;
+    width: 75%;
+    box-shadow: 5px 5px 10px gray;
+}
+
+textarea {
+    min-width: 300px;
+    width: 50%;
+}
+
+input:required {
+    border: 4px solid #efd45b;
+}
+
+iframe {
+    width: 300px;
+}
+
+#contactInfo {
+    display: block;
+}
+
+.dropdown {
+    max-width: 200px;
+
+}
+#contactInfo {
+    grid-area: left;
+}
+
+#embedMap {
+    grid-area: right;
+}
+
+
+#form-container {
+    display: grid;
+    align-content: center;
+    max-width: 100%;
+    grid-template-areas: 'left' 'right';
+    grid-gap: 10px;
+}
+
+#form fieldset {
+    width: 75%;
+}
+
+#price {
+    color: rgba(0, 89, 37, 1);
+    font-weight: bold;
+}
