@@ -1,8 +1,4 @@
-#grid-container {
-    display: grid;
-    align-content: center;
-    max-width: 100%;
-}
+
 #table-container {
     align-content: center;
     max-width: 100%;
