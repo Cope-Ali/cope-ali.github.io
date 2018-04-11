@@ -114,5 +114,13 @@
             margin: auto;
             width: 800px;
         }
+        #content-container-sales {
+            display: grid;
+            width: 100%;
+            align-content: start;
+            grid-template-areas: 'thumbnails thumbnails' 'center center';
+            grid-gap: 5px;
+            height: 1600px;
+        }
 }
 }
