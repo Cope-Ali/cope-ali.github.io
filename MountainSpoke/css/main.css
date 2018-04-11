@@ -62,10 +62,10 @@ footer {grid-area: footer;}
 section h2 {grid-area: title;}
 section img {grid-area: img;}
 section p {grid-area: p;}
-.abutton {grid-area: button;}
-a button {
+.abutton {grid-area: button;
     text-decoration: none;
     color: #efd45b;
+    text-align: center;
 }
 
 #homeTour, #homeBuy, #tourOne, #tourTwo, #event1, #event2{
@@ -199,7 +199,7 @@ label span {
     padding-top: .9em;
 }
 
-input.submit, button {
+input.submit, .abutton {
     color: #efd45b;
     font-size: 1em;
     font-weight: bold;
@@ -211,6 +211,7 @@ input.submit, button {
     font-family: 'Chelsea Market', cursive;
     width: 50%;
     box-shadow: 5px 5px 10px gray;
+    align-content: center;
 }
 
 textarea {
