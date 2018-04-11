@@ -256,7 +256,7 @@ iframe {
     width: 75%;
 }
 
-#price {
+#price, .price {
     color: rgba(0, 89, 37, 1);
     font-weight: bold;
 }

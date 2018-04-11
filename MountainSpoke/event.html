@@ -40,12 +40,12 @@
                 <p>Cycle the Continental Divide is our annully hosted event for riders across the world to bike the best trail on earth, the The Great Divide Mountain Bike Route (GDMBR). GDMBR is the premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%). Don't miss out on this incredible adventure biking some of the worlds most beautify scenery on this route from Canada to Mexico. Tours are 2754 miles long, biking around 100 miles per day for 30 days. Be sure you and your doctor agree you are healthy enough to undertake this adventure! <br>
                 2018 July Tour - July 9 - August 8 <br>
                 2018 September Tour - September 1 - October 1 <br>
-                    <span id="price">Price - $6800</span></p>
+                    <span class="price">Price - $6800</span></p>
                 </section>
                 <section id="event2">
                 <h2>Rocky Ride</h2>
-                <img class='eventimg' src="img/mj-618_348_emerald-lake-trail-15-best-mountain-biking-trails-in-montana.jpg">
-                <p>Join us for our annual Rocky Ride, a mountain bike rally for all skill levels! We will have a 20 mile ride or 10 mile ride option. Join us for the beauty of the mountains, and the comradarie of new friends. The rides will take place in the morning with shuttles to the starting point and will finish at the food truck rally for some good eats to celebrate the day. <br> This event is held annualy on The Mountain Spoke's birthday August 15. <br><span id="price"> Price <br>
+                <img class='eventimg' src="img/mj-618_348_emerald-lake-trail-15-best-mountain-biking-trails-in-montana.jpg" alt="mountain biker riding down slope">
+                <p>Join us for our annual Rocky Ride, a mountain bike rally for all skill levels! We will have a 20 mile ride or 10 mile ride option. Join us for the beauty of the mountains, and the comradarie of new friends. The rides will take place in the morning with shuttles to the starting point and will finish at the food truck rally for some good eats to celebrate the day. <br> This event is held annualy on The Mountain Spoke's birthday August 15. <br><span class="price"> Price <br>
                     Rocky Ride 20 mile - $100<br>
                     Rocky Ride Half (10 miles) - $50 <br></span></p>
             </section>
@@ -64,7 +64,7 @@
                         </label>
                         <label>
                             <span>Birth Date</span>
-                            <input name="bday" type="date" value placeholder="mmddyyyy" required>
+                            <input name="bday" type="date" required>
                         </label>
                         <label>
                             <span>Home Location</span>
@@ -81,7 +81,7 @@
                         <label>
                             <span>Preferred Contact Method</span>
                             <input name="contactMethod" type="radio" value = "call"> "Phone Call" <br>
-                            <input name="contactMethod" type="radio" value = "text"> "Text Me" <br>
+                            <input name="contactMethod" type="radio" value = "texting"> "Text Me" <br>
                             <input name="contactMethod" type="radio" value = "email"> "Email" <br>
                         </label>
                     </fieldset>
@@ -90,8 +90,8 @@
 
                         <label>
                             <span>Event</span>
-                            <select class="dropdown" name="tour" required>
-                                <option value="default" selected disabled>Select Event</option>
+                            <select class="dropdown" name="tour" value placeholder= "Select Event" required>
+                                <option disabled></option>
                                 <option value="divide2018">Cycle the Continental Divide - July</option>
                                 <option value="divide2019">Cycle the Continental Divide - September</option>
                                 <option value="rocky-2018">Rocky Rally - 2018</option>
