@@ -48,7 +48,7 @@
         display: inline-block;
     }
 
-    button {
+    button, .abutton {
         width: 250px;
         align-self: center;
         margin: auto;

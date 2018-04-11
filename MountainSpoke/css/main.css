@@ -62,8 +62,8 @@ footer {grid-area: footer;}
 section h2 {grid-area: title;}
 section img {grid-area: img;}
 section p {grid-area: p;}
-section button {grid-area: button;}
-button a {
+.abutton {grid-area: button;}
+a button {
     text-decoration: none;
     color: #efd45b;
 }
@@ -209,7 +209,7 @@ input.submit, button {
     border-radius: 2em;
     border: #efd45b double 4px;
     font-family: 'Chelsea Market', cursive;
-    width: 75%;
+    width: 50%;
     box-shadow: 5px 5px 10px gray;
 }
 

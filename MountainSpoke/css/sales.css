@@ -54,7 +54,7 @@
     align-content: start;
     grid-template-areas: 'thumbnails' 'center';
     grid-gap: 5px;
-    height: 1600px;
+    height: 1200px;
 }
 
 #bikeOne,
@@ -117,7 +117,6 @@
             align-content: start;
             grid-template-areas: 'thumbnails thumbnails' 'center center';
             grid-gap: 5px;
-            height: 1600px;
         }
 }
 }
