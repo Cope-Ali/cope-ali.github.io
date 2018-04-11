@@ -51,7 +51,7 @@
 #content-container-sales {
     display: grid;
     max-width: 100%;
-    align-content: start;
+    align-content: flex-start;
     grid-template-areas: 'thumbnails' 'center';
     grid-gap: 5px;
     height: 1200px;
@@ -114,9 +114,9 @@
         #content-container-sales {
             display: grid;
             width: 100%;
-            align-content: start;
+            align-content: flex-start;
             grid-template-areas: 'thumbnails thumbnails' 'center center';
             grid-gap: 5px;
         }
 }
-}
+
